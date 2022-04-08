@@ -1,0 +1,171 @@
+.servicesslider{
+    width: 100%;
+}
+.servicesslider .slick-slider{
+    width: 100%;
+}
+.servicesslider__item__inside{
+    width: 450px !important;
+    background-color: white;
+    width: 100%;
+    box-shadow: 7px 8px 20px 0px #0000007d;
+    margin-right: 1rem;
+}
+.servicesslider .slick-slider .slick-track .slick-slide{
+    box-sizing: border-box;
+}
+.servicesslider .slick-slider .slick-track{
+    padding-bottom: 2rem;
+}
+
+.servicesslider .slick-slider .slick-track .slick-slide{
+    margin: 0 1rem;
+}
+
+.servicesslider__item__inside{
+    height: auto;
+    border-radius: 20px;
+}
+.servicesslider .slick-slider .slick-next ,
+.servicesslider .slick-slider .slick-prev {
+    right: 0;
+    left: 0;
+    display: none !important;
+}
+.servicesslider__item__inside__content{
+    padding: 30px;
+    direction: rtl;
+}
+.servicesslider__item__inside__content__top{
+    display: flex;
+    align-items: center;
+}
+.servicesslider__item__inside__content__top__img{
+    width: 15%;
+}
+.servicesslider__item__inside__content__top__img img{
+    width: 100%;
+    height: 100%;
+}
+.servicesslider__item__inside__content__top__text{
+    margin-right: 15px;
+}
+.servicesslider__item__inside__content__top__text__title{
+    color: var(--main-color);
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 20px;
+}
+.servicesslider__item__inside__content__top__text__body{
+    color: orange;
+}
+.servicesslider__item__inside__content__body{
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.452);
+}
+.servicesslider__item__inside__content__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.servicesslider__item__inside__content__bottom__right{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.servicesslider__item__inside__content__bottom__right__number{
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Vazirmatn', sans-serif;
+    color: rgb(8, 196, 8);
+}
+.servicesslider__item__inside__content__bottom__right__text{
+    color: rgb(8, 196, 8);
+    font-size: 18px;
+}
+.servicesslider__item__inside__content__bottom__left{
+    display: flex;
+    align-items: center;
+}
+.servicesslider__item__inside__content__bottom__left__btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.servicesslider__item__inside__content__bottom__left__btn:hover{
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+.servicesslider__item__inside__content__bottom__left__btn__icon{
+    color: var(--main-color);
+    font-size: 25px;
+    margin-right: 10px;
+}
+.seservicesslider__btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+}
+.seservicesslider__btn__left svg{
+    cursor: pointer;
+    stroke: black;
+    
+}
+.seservicesslider__btn__right svg{
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+@media screen and (max-width:1000px){
+    .seservicesslider__btn{
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:750px){
+    .servicesslider__item__inside{
+        width: 300px !important;
+    }
+    .servicesslider__item__inside__content__body{
+        font-size: 10px;
+    }
+    .servicesslider__item__inside__content{
+        padding: 15px;
+    }
+    .servicesslider__item__inside__content__bottom__right__number{
+        font-size: 15px;
+    }
+    .servicesslider__item__inside__content__bottom__right__text{
+        font-size: 12px;
+    }
+    .servicesslider__item__inside__content__bottom__left__btn{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .servicesslider__item__inside__content__bottom__left__btn__icon{
+        font-size: 15px;
+    }
+    .servicesslider .slick-slider .slick-track{
+        padding-bottom: 5rem !important;
+    }
+    .seservicesslider__btn{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .servicesslider__item__inside{
+        margin:0 2rem;
+    }
+}

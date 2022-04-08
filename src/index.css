@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@800;900&family=Work+Sans:ital,wght@1,200&display=swap');
+@import url(fontiran.css);
+:root{
+  --main-color:#701FFF;
+  --text-color:#7F7F7F;
+}
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul , li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: IRANSans;
+  font-weight:normal;
+}

@@ -1,0 +1,91 @@
+.test__container{
+    margin-top: 8rem;
+}
+.test__container__image{
+    width: 100%;
+    position: relative;
+}
+.test__container__image img {
+    width: 100%;
+    height: 100%;
+    filter: invert(17%) sepia(83%) saturate(7201%) hue-rotate(261deg) brightness(97%) contrast(99%);
+}
+.test__container__background{
+    background-color:var(--main-color);
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    top: -10px;
+}
+.test__container__image__icon{
+    position: absolute;
+    z-index: 5;
+    top: 62%;
+    left: 49%;
+    cursor: pointer;
+}
+.test__container__image__icon:hover{
+    animation: shake 4s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(0, -6px, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(0, 6px, 0);
+    }
+  
+    30%, 50%, 70% {
+        transform: translate3d(0, -6px, 0);
+    }
+  
+    40%, 60% {
+        transform: translate3d(0, 6px, 0);
+    }
+  }
+
+ .test__container__background__content{
+     text-align: center;
+ } 
+ .test__container__background__content__title{
+    font-family: 'Vazirmatn', sans-serif;
+    color: white;
+    font-size: 28px;
+    padding-top: 2rem;
+ }
+ .test__container__background__content__subtitle{
+     color: rgba(255, 255, 255, 0.88);
+     padding-top: 10px;
+     font-weight: 100;
+ }
+ .curve__svg{
+    width: 100%;
+    height: 20vh;
+ }
+ .curve__svg img{
+     width: 100%;
+     height: 100%;
+     filter: invert(17%) sepia(83%) saturate(7201%) hue-rotate(261deg) brightness(97%) contrast(99%);
+ }
+ @media screen and (max-width:997px){
+     .test__container__image__icon{
+        top: 50%;
+        left: 48.5%;
+     }
+ }
+ @media screen and (max-width:650px){
+    .test__container__image__icon{
+       top: 47%;
+       left: 48%;
+    }
+}
+@media screen and (max-width:450px){
+    .test__container__image__icon{
+       top: 20%;
+       left: 46.5%;
+    }
+}

@@ -1,0 +1,203 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+}
+.navbar__logo{
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: bold;
+    font-weight: 900;
+    flex: 0.15;
+}
+.navbar__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2f2;
+    padding:0.5rem 2rem;
+    border-radius: 30px;
+    flex: 0.4;
+}
+.navbar__menu__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.9;
+}
+.navbar__input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.navbar__menu__item li {
+    color: #555555;
+    cursor: pointer;
+}
+.navbar__menu__item li:hover{
+    transition: all 0.3s ease;
+    color: var(--main-color);
+}
+.navbar__menu svg{
+    color: rgba(0, 0, 0, 0.454);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.navbar__menu svg:hover{
+    color: #000;
+}
+.navbar__info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0.4;
+}
+.navbar__info__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.5rem 2rem 0.5rem 1.5rem;
+    border-radius: 30px;
+    word-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.navbar__info__login:hover{
+    opacity: 0.8;
+}
+.navbar__info__login:hover .navbar__info__login__svg{
+    transform: translateX(-5px);
+}
+.navbar__info__login svg{
+   margin-right: 5px;
+   font-size: 20px;
+}
+.navbar__info__phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__info__phone__right{
+    margin-left: 2rem;
+}
+.navbar__info__phone__right__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__info__phone__right__number div{
+    color: var(--main-color);
+    font-family: 'Vazirmatn', sans-serif;
+    margin-left: 10px;
+}
+.navbar__info__phone__right__number p{
+    font-family: 'Vazirmatn', sans-serif;
+}
+.navbar__info__phone__right__text{
+    color: var(--text-color);
+    font-size: 12px;
+}
+.navbar__info__phone__icon{
+    background-color: var(--main-color);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+.navbar__info__phone__icon svg{
+    display: flex;
+}
+.hamburger__menu{
+    margin-left: 20px;
+    font-size: 28px;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+.hamburgermenu{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000055;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+.hamburgermenu__item{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+}
+.hamburgermenu__item__items{
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.hamburgermenu__item__items li{
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hamburgermenu__item__items li:hover{
+    color: var(--main-color);
+}
+.close__btn{
+    direction: ltr;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.close__btn:hover{
+    color: var(--main-color);
+}
+
+@media screen and (max-width:1200px){
+    .navbar__info__login{
+        margin-left: 1rem;
+        padding: 10px 15px;
+    }
+    .navbar__info__login p{
+        font-size: 13px;
+    }
+    .navbar__menu__item li {
+        font-size: 15px;
+    }
+    .navbar__menu{
+        flex: 0.5;
+    }
+}
+@media screen and (max-width:1073px){
+    .navbar__menu{
+        display: none;
+    }
+    .navbar__info{
+        width: 600px;
+        flex: 0.8;
+    }
+    .navbar__logo{
+        flex: 0.3;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+}
+@media screen and (max-width:665px){
+    .navbar__info__phone{
+        display: none;
+    }
+    .navbar{
+        margin: 2rem 1rem;
+    }
+    .navbar__logo{
+        flex: 0.5;
+    }
+}
